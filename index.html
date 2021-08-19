@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/timer.png" type="image/x-icon">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <h1 class="app-heading">Pomodoro App</h1>
+
+    <div class="container">
+        <p id="pomo" class="top pomodoro active">Pomodoro</p>
+        <p id="break" class="top break">Break</p>
+        <p class="top long-break">Long Break</p>
+    </div>
+    <div class="timer">
+        <p id='w-min' class="time">25</p>
+        <p class="seperator">:</p>
+        <p id="w-sec" class="time">00</p>
+    </div>
+    <div id="buttons">
+        <button id="start" class="button is-primary is-large">Start</button>
+        <button id="pause" class="button is-large">Pause</button>
+        <button id="reset" class="button is-large is-danger">Reset</button>
+        <button id="skip" class="button is-large is-danger">Skip</button>
+    </div>
+    <div class="cycles">
+        <p class="pomo-counter">Pomodoros : </p>
+        <p id="cycle">1</p>
+        <p> / </p>
+        <p id="total-cycles">4</p>
+    </div>
+    <div class="msg">
+        <p id="message" class="msg-txt">Time to Work!</p>
+    </div>
+</body>
+
+<script src="main.js"></script>
+<script src="app.js"></script>
+
+</html>

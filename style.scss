@@ -1,0 +1,80 @@
+.app-heading {
+  font-size: 48px;
+  font-family: "Poppins";
+
+  padding-top: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 22px;
+
+  justify-content: center;
+  align-content: center;
+
+  .top {
+    padding: 20px;
+    font-size: 22px;
+    font-family: "Poppins";
+  }
+
+  .active {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  font-size: 64px;
+  font-family: "Poppins";
+
+  justify-content: center;
+  align-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+
+  #skip {
+    display: none;
+  }
+}
+
+.button {
+  font-weight: lighter;
+
+  margin-right: 16px;
+}
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .msg-txt {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: "Poppins";
+  }
+}
+
+.cycles {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  font-family: "Poppins";
+  font-size: 20px;
+
+  padding: 30px;
+}
