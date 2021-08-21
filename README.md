@@ -10,9 +10,10 @@
 
 ## Features
 
-- Minimal and Lightweight User Interface
-- Easy to use and basic functionality.
-- Keyboard shortcuts. Press `Spacebar` to Start/Pause the Timer.
+- [x] Minimal and Lightweight User Interface
+- [x] Easy to use and basic functionality.
+- [x] Keyboard shortcuts. Press `Spacebar` to Start/Pause the Timer.
+- [x] Settings to change **Pomodoro** & **Short Break** duration.
 
 ## Installation 
 
