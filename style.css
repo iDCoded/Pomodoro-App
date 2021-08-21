@@ -177,6 +177,20 @@ body {
   right: 10px;
 }
 
+.settings-container .settings-panel #setting-help {
+  border: none;
+  background: none;
+  position: absolute;
+  bottom: 35px;
+  right: 120px;
+}
+
+.settings-container .settings-panel #setting-help::after {
+  font-family: FontAwesome;
+  content: "\f05a";
+  cursor: pointer;
+}
+
 .settings-container .close-settings {
   position: absolute;
   right: 25px;

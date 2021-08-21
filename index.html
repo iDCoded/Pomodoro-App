@@ -23,7 +23,7 @@
         <p id="break" class="top break">Break</p>
         <p class="top long-break">Long Break</p>
     </div>
-    <div class="timer">
+    <div class="timer" id="time" onload="setValue()">
         <p id='w-min' class="time">00</p>
         <p class="seperator">:</p>
         <p id="w-sec" class="time">00</p>
@@ -54,7 +54,8 @@
                 max="30" id="setting-pomodoros">
             <h4>Short Break</h4><input type="number" placeholder="05" value="05" class="input is-medium is-link" min="2"
                 max="15" id="setting-break">
-            <button id="setting-okay" class="button okay-btn">Okay</button>
+            <button class="fa-2x" id="setting-help"></button>
+            <button id="setting-okay" class="button is-info okay-btn">Okay</button>
         </div>
     </div>
 </body>

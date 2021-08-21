@@ -26,9 +26,18 @@ var settings_okay_button = document.getElementById("setting-okay");
 var pomodoros = document.getElementById("setting-pomodoros");
 var short_break = document.getElementById("setting-break");
 
+var help_button = document.getElementById("setting-help");
+
 var startTimer;
 
 window.addEventListener("keyup", handleKeyPress);
+
+function setValue() {
+  work_minutes.innerText = pomodoros.value;
+  work_seconds.innerText = "00";
+}
+
+document.getElementById("time").addEventListener("load", setValue());
 
 /**
  * @param {KeyboardEvent} e Key pressed by the user.
@@ -83,13 +92,13 @@ pause.addEventListener("click", function () {
 });
 
 reset.addEventListener("click", function () {
-  work_minutes.innerText = 25;
-  work_seconds.innerText = "00";
-
   start.classList.add("is-primary");
   pause.classList.remove("is-link");
 
   skip_pomodoro.style.display = "none";
+
+  document.title =
+    work_minutes.innerText + ":" + work_seconds.innerText + " | Pomodoro";
 
   settings_okay_button.click();
 
@@ -157,20 +166,20 @@ settings_okay_button.addEventListener("click", function () {
   work_seconds.innerText = "00";
   work_minutes.innerText = pomodoros.value;
   if (break_time.classList.contains("active")) {
-    work_minutes.innerText = short_break.value;
+    if (short_break.value < 10) {
+      work_minutes.innerText = "0" + short_break.value;
+    } else {
+      work_minutes.innerText = short_break.value;
+    }
   } else {
     work_minutes.innerText = pomodoros.value;
   }
+  settings_panel.classList.remove("enable");
 });
 
-function timer() {
-  work_minutes.innerText = pomodoros.value;
-  if (break_time.classList.contains("active")) {
-    work_minutes.innerText = short_break.value;
-  } else {
-    work_minutes.innerText = pomodoros.value;
-  }
+help_button.addEventListener("click", function () {});
 
+function timer() {
   // Work Timer Countdown
   if (work_seconds.innerText != 0) {
     work_seconds.innerText--;
@@ -249,10 +258,3 @@ function timer() {
     start.classList.remove("is-primary");
   }
 }
-
-function setValue() {
-  work_minutes.innerText = pomodoros.value;
-  work_seconds.innerText = "00";
-}
-
-setValue();
