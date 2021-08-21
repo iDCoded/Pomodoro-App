@@ -1,3 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
 .app-heading {
   font-size: 48px;
   font-family: "Poppins";
@@ -106,5 +115,95 @@
   font-family: "Poppins";
   font-size: 20px;
   padding: 30px;
+}
+
+.settings {
+  position: relative;
+}
+
+.settings .set-btn {
+  position: absolute;
+  right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.settings-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.settings-container .settings-panel {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 4px;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.settings-container .settings-panel h4 {
+  font-family: "Poppins";
+  font-size: 18px;
+  opacity: 0.8;
+  padding-top: 20px;
+}
+
+.settings-container .settings-panel .setting-title {
+  font-size: 32px;
+  padding-top: 30px;
+}
+
+.settings-container .settings-panel .okay-btn {
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+}
+
+.settings-container .close-settings {
+  position: absolute;
+  right: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.settings-container .close-settings::after {
+  content: "\d7";
+  font-family: FontAwesome;
+}
+
+.enable {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.skip-pomo-btn {
+  display: none;
+  border: none;
+  background: none;
+}
+
+.skip-pomo-btn::after {
+  font-family: FontAwesome;
+  content: "\25b6";
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,20 +1,18 @@
 // const electron = require("electron");
 
-const { app, BrowserWindow, globalShortcut } = require("electron");
+const { app, BrowserWindow } = require("electron");
 
 let application;
 
 function createWindow() {
   application = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 960,
+    height: 660,
   });
   application.loadFile("index.html");
 }
 // Create the app when ready.
 app.whenReady().then(() => {
-  globalShortcut.register("Space", () => {});
-
   createWindow();
 
   app.on("activate", function () {
