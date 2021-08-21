@@ -28,6 +28,9 @@ var short_break = document.getElementById("setting-break");
 
 var help_button = document.getElementById("setting-help");
 
+var pomo_plus = document.getElementById("plus-pomo");
+var pomo_minus = document.getElementById("minus-pomo");
+
 var startTimer;
 
 window.addEventListener("keyup", handleKeyPress);
@@ -131,8 +134,6 @@ skip.addEventListener("click", function () {
 
 skip_pomodoro.addEventListener("click", function () {
   alert("Do you wish to skip the Pomodoro?");
-  work_minutes.innerText = "05";
-  work_seconds.innerText = "00";
 
   start.classList.add("is-primary");
   pause.classList.remove("is-link");
@@ -178,6 +179,16 @@ settings_okay_button.addEventListener("click", function () {
 });
 
 help_button.addEventListener("click", function () {});
+
+pomo_plus.addEventListener("click", function () {
+  totalCycles.innerText++;
+});
+
+pomo_minus.addEventListener("click", function () {
+  if (totalCycles.innerText > 1) {
+    totalCycles.innerText--;
+  }
+});
 
 function timer() {
   // Work Timer Countdown

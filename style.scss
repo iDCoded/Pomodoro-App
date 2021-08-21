@@ -86,6 +86,10 @@ body {
   font-size: 20px;
 
   padding: 30px;
+
+  p {
+    padding-left: 8px;
+  }
 }
 
 .settings {
@@ -185,5 +189,28 @@ body {
 .skip-pomo-btn::after {
   font-family: FontAwesome;
   content: "\25b6";
+  cursor: pointer;
+}
+
+.plus-btn {
+  border: none;
+  background: none;
+  padding-left: 15px;
+}
+.plus-btn::after {
+  font-family: FontAwesome;
+  content: "\f067";
+  cursor: pointer;
+}
+.minus-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.minus-btn::after {
+  font-family: FontAwesome;
+  content: "\f068";
   cursor: pointer;
 }
