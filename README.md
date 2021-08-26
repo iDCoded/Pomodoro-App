@@ -24,9 +24,8 @@ Go to the [Releases](https://github.com/iDCoded/Pomodoro-App/releases) page and 
 The app is currently available only for `Windows x64` only.
 
 - Download the app from the [Releases](https://github.com/iDCoded/Pomodoro-App/releases) page.
-- Open the folder and run `pomodoro.exe`
-    - Create a shortcut of the App to any desired location.  
-- Open the App and press on `Start` to start the timer and finish your tasks.
+- Run the `setup.exe`
+- Use the App! 🥳
 
 ## Contribution
 
