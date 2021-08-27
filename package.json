@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "App with Pomodoro timer to hekp you keep track of time and finish your tasks.",
   "main": "app.js",
+  "homepage": "https://github.com/iDCoded/Pomodoro-App#readme",
   "scripts": {
     "start": "electron .",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "build": "electron-builder build --win --x64"
   },
   "author": "Dhruv",
   "license": "ISC",
@@ -16,7 +18,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.59",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.59",
     "@electron-forge/maker-zip": "^6.0.0-beta.59",
-    "electron": "^13.2.1"
+    "electron": "^13.2.1",
+    "electron-builder": "^22.11.7"
   },
   "dependencies": {
     "bulma": "^0.9.3",

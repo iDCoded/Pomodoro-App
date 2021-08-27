@@ -268,4 +268,10 @@ function timer() {
   } else if (pause.classList.contains("is-link")) {
     start.classList.remove("is-primary");
   }
+
+  if (break_time.classList.contains("active")) {
+    message.innerText = "Time for a break";
+  } else if (pomo.classList.contains("active")) {
+    message.innerText = "Time to Work!";
+  }
 }
